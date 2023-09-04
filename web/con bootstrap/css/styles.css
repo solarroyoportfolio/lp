@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.imagen-menu{
+    width:250px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* carrousel */
+
+#btnquieroviajar{
+    position: absolute;
+    background:#2bedf2 ;
+    border-radius: 0;
+    bottom: 24%;
+    left: 41%;
+    font-size: 23px;
+    padding: 10px 30px;
+}
+
+
+
+
+
+/* nosotros */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 15px;
+    min-height: 80vh;
+}
+
+.iconos i{ 
+    border: 1px solid #333;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.subtitulos{
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+h2{
+    font-weight: 300;
+}
+
+.textoconfoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27%;
+    text-align: center;
+    margin-right: 27%;
+}
+.textoconfoto img{
+    width: 200px;
+}
+
+.textoyboton{
+
+}
+.textoyboton p{
+    text-align: justify;
+    margin-right: 30px;
+}

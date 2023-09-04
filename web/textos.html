@@ -1,0 +1,82 @@
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="./img/pexels-татьяна-таперо-18099418.jpg" alt="Imagen 1">
+                <div class="caption">Pie de página 1</div>
+            </div>
+            <div class="slide">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <div class="caption">Pie de página 2</div>
+            </div>
+            <div class="slide">
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <div class="caption">Pie de página 3</div>
+            </div>
+        </div>
+        <button id="prev"><i class="fi fi-rr-angle-small-left"></i></button>
+        <button id="next"><i class="fi fi-rr-angle-small-right"></i></button>
+    </div>
+</section>
+
+
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: all 0.5s;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel();
+    });
+
+    nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+});
