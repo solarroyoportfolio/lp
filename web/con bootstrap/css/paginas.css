@@ -588,6 +588,9 @@ form{
         padding: 4px;
         background: #c7c7c792;
     }
+    .text-fotos-equipo{
+        top: 10%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -626,10 +629,17 @@ form{
 }
 @media screen and (max-width:460px) {
     #btnquieroviajartrans{
-        margin-top: 10px;
         font-size: 0.4rem;
         padding: 3px;
         background: #c7c7c792;
+    }
+
+    .text-fotos-equipo{
+        top: 8%;
+    }
+
+    #whatsapp{
+        right: 30px;
     }
 }
     
