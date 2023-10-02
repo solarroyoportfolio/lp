@@ -1,0 +1,1488 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Fuentetitulo'; /* El nombre que quieras darle a la fuente */
+    src: url('../fonts/NewakeFont-Demo.otf') format('opentype'); /* Ruta a tu archivo de fuente OTF */
+    /* Puedes especificar otros formatos de fuente aquí si tienes diferentes versiones */
+  }
+  @font-face {
+    font-family: 'FuentesubtituloLight'; /* El nombre que quieras darle a la fuente */
+    src: url('../fonts/Roboto-Light.ttf') format('opentype'); /* Ruta a tu archivo de fuente OTF */
+    /* Puedes especificar otros formatos de fuente aquí si tienes diferentes versiones */
+  }
+  @font-face {
+    font-family: 'FuentesubtituloRegular'; /* El nombre que quieras darle a la fuente */
+    src: url('../fonts/Roboto-Regular.ttf') format('opentype'); /* Ruta a tu archivo de fuente OTF */
+    /* Puedes especificar otros formatos de fuente aquí si tienes diferentes versiones */
+  }
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fuentetitulo','FuentesubtituloLight','FuentesubtituloRegular', sans-serif;
+    position: relative;
+}
+
+#whatsapp{
+   position: fixed;
+     right: 50px;
+    bottom: 100px;
+    background: #4CC459;
+    border-radius: 50%;
+    box-shadow:     1px 1px 3px #333;
+}
+
+#arrow-back{
+    position: fixed;
+    left: 50px;
+    bottom: 80px;
+    background: #d4d2d25b;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px #94929283;
+    opacity: 0.4;
+}
+
+#arrow-back img{
+    width: 40px;
+    color: #06ecf2;
+}
+
+
+#whatsapp img{
+    width: 45px;
+  
+}
+
+.imagen-menu{
+    width:200px;
+    margin-right: 25px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+/* ---------------------- */
+/* Footer */
+
+footer{
+    background: #edeae6;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 70px 0px;
+    font-family: 'FuentesubtituloRegular';
+
+    
+}
+
+.category{
+    color: #787878;
+    
+}
+
+.category h6{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+   
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #918f8f;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tarjetas img{
+    width: 37px;
+    padding: 2px;
+}
+
+.fenvio img{
+    width: 55px;
+}
+
+
+
+@media screen and (max-width:950px){
+   footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+   }
+
+   .category{
+    margin: 20px 0px;
+   }
+   .tarjetas{
+    text-align: center;
+   }
+}
+
+
+/* ---------------------- */
+
+.viajeexotico{
+    position: relative;
+}
+
+#btnquieroviajar{
+    position: absolute; 
+  top: 70%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Corrige la posición del texto */
+  background-color: #06ecf2;
+    padding: 10px 30px; 
+  color: #333; 
+  text-align: center; 
+  border-radius: 0;
+  border: 1px solid #333;
+}
+
+#btnquieroviajartrans{
+    position: absolute; 
+    top: 75%; 
+    left: 49%; 
+    transform: translate(-50%, -50%); /* Corrige la posición del texto */
+    background-color: #06ecf2;
+      padding: 10px 30px; 
+    color: #333; 
+    text-align: center; 
+    border-radius: 0;
+    border: 1px solid #333;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    
+    #btnquieroviajar{
+        left: 50%;
+        padding: 5px 15px;
+        font-size: 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:729px) {
+  
+
+    .quieroviajar{
+        font-size: 10px;
+        left: 28%;
+        padding: 1px 10px;
+
+    }
+
+    
+}
+
+@media screen and (max-width:460px){
+    #fotos-equipo{
+        grid-template-columns: 1fr;
+    }
+
+    .nuestro-lugar-texto{
+        width: 90%;
+    }
+    
+}
+
+
+/* -------viaje exoticos cards*/
+.cards-exotico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'FuentesubtituloLight';
+    padding: 30px 35px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+}
+
+.card{
+    text-align: center;
+    width: 25rem;
+    position: relative;
+}
+
+.card-body{
+    background: #edeae6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-family: 'FuentesubtituloLight';
+}
+
+.card-body .qvexotico{
+    border: 1px solid #333;
+    margin-right: 20px;
+    border-radius: 0;
+}
+
+.card-body .qvexoticolight{
+    border: 1px solid #a6a4a4;
+    margin-left: 20px;
+    border-radius: 0;
+    color: #a6a4a4;
+}
+
+.botones{
+    margin-top: 20px;
+    bottom: 0;
+    text-align: center;
+}
+
+.card-img-overlay{
+    text-align: center;
+}
+
+.logos{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.titulocard{
+    font-family: 'FuentesubtituloRegular';
+}
+
+
+
+
+
+
+/* ----------section exoticosform */
+
+.exoticos-form{
+    position: relative;
+    min-height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #edeae6;
+}
+
+.form-destino{
+    position: absolute;
+
+    background: #141414;
+    width: 35%;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+form{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.text-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.text-formulario p{
+    width: 80%;
+    font-family: 'FuentesubtituloLight';
+}
+
+#nombre::placeholder, #apellido::placeholder, #telefono::placeholder, #email::placeholder, #cuando::placeholder, #contanos::placeholder{
+    color: #edeae6c4;
+    font-family: 'FuentesubtituloLight';
+    font-size: 0.9rem;
+}
+
+#nombre, #apellido, #telefono, #email, #cuando, #contanos{
+    background: black;
+    color: aliceblue;
+    border-radius: 0;
+}
+
+#botonform{
+    width: 100%;
+    background-color: #edeae6;
+    border-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 950px) {
+    .exoticos-form{
+        flex-direction: column;
+
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .form-destino{
+        width: 100%;
+        position: relative;
+    }
+    
+
+
+}
+
+
+
+
+
+
+/* ------------------------------------ */
+/* ----------TRAVEL PLANNERS----------- */
+
+
+.planners img{
+    width:700px;
+    margin-top: 40px;
+}
+.list-planner{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 0;
+}
+
+.card-planner{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+
+.iconos-planner{
+    width: 50px;
+}
+
+.text-card-planner{
+    width: 80%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.text-card-planner h6{
+    font-family: 'FuentesubtituloRegular';
+}
+
+.btnplanificatuviaje{
+    background: transparent;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.texto-descripcion-equipo{
+    margin-top: 20%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-descripcion-equipo p
+{
+    width:80% ;}
+
+
+    .texto-descripcion-equipo a{
+        margin-top: 20px;
+    }
+.texto-final-planners{
+    color: #edeae6ca;
+}
+
+.descripcion-fotos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    text-align: center;
+}
+/* ------------------------------------ */
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* ------------equipo planner------------ */
+
+.equipo-planner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'FuentesubtituloLight';
+    background: #edeae6;
+    padding: 10%;
+}
+
+
+.fotos-equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.img-equipo{
+    display: inline-block; 
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    position: relative;
+    transition: opacity 0.3s;
+    
+
+}
+
+.img-equipo img{
+    max-width: 100%;
+    transition: filter 0.3s; /* Agrega una transición suave para el filtro */
+
+}
+
+.img-equipo:hover img{
+    opacity: 0.5;
+    filter: grayscale(100%); /* Convierte la imagen en escala de grises */
+    /* background-color: #948f8f; Cambia el fondo a gris */
+    border-radius: 100%;
+}
+
+.img-equipo:hover{
+    opacity: 1;
+}
+
+.text-fotos-equipo:hover{
+    opacity: 1;
+}
+.text-fotos-equipo{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Fondo transparente */
+    color: #fff; /* Color del texto en blanco */
+    padding: 10px; /* Espaciado interno para el texto */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+    opacity: 0; /* Inicialmente, el texto es invisible */
+    transition: opacity 0.3s; /* Agrega una transición suave */
+    text-shadow: 1px 1px 1px #333;
+}
+
+.text-fotos-equipo h6{
+    font-size: 1.5rem;
+}
+
+.img-equipo:hover .text-fotos-equipo {
+    opacity: 1; /* Hacer que el texto sea completamente visible */
+  }
+
+
+.boton-planificar{
+    text-decoration: none;
+    color: #333;
+    padding: 5px 20px;
+    border: 1px solid #333;
+    font-size: .8rem;
+    font-family: 'FuentesubtituloRegular';
+    margin-bottom:20px;
+
+}
+
+@media screen and (max-width:950px) {
+    .planners img{
+        width: 550px;
+
+    }
+
+    .list-planner{
+        width: 90%;
+    }
+
+    .fotos-equipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .img-equipo img{
+        width: 200px;
+    }
+    #btnquieroviajartrans{
+        font-size: 0.8rem;
+        padding: 4px;
+        background: #c7c7c792;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-planner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .text-card-planner p{
+        font-size: .7rem;
+        
+    }
+
+    .text-card-planner{
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .iconos-planner{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    .card-planner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #btnquieroviajartrans{
+        font-size: 0.8rem;
+        padding: 4px;
+        background: #c7c7c792;
+    }
+}
+@media screen and (max-width:460px) {
+    #btnquieroviajartrans{
+        margin-top: 10px;
+        font-size: 0.4rem;
+        padding: 3px;
+        background: #c7c7c792;
+    }
+}
+    
+
+
+
+
+/* -----------------------------especialistas----- */
+.especialistas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #141414;
+    min-height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nuestro-lugar-texto{
+    margin-top: 20px;
+}
+.nuestro-lugar-texto h6{
+    font-family: 'FuentesubtituloLight';
+    font-size: 2rem;
+    color: #edeae6;
+}
+
+.nuestro-lugar-texto p{
+    color: #edeae6;
+    font-family: 'FuentesubtituloLight';
+
+}
+
+.especialistas img{
+    margin: 30px;
+    width: 80%;
+}
+/* -------------------------------------- */
+
+
+/*---------footer planners--------  */
+
+    #footer-travelplanners{
+        background: #edeae6;
+    }
+
+/* ------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- */
+/* ---------section deco&blends */
+
+#banner-deco{
+    min-height: 30vh;
+    position: relative;
+}
+
+.banner-deco-fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-deco-fotos img{
+    width: 33.3%;
+}
+
+.fotos-banner-deco{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #edeae6;
+}
+
+.fotos-banner-deco h1{
+    font-size: 3rem;
+    font-family: 'Fuentetitulo';
+    text-shadow: 2px 2px 2px #33333396;
+}
+
+.fotos-banner-deco p{
+    font-size: 1.5rem;
+    font-family: 'FuentesubtituloLight';
+    text-shadow: 1px 1px 1px #33333396;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.deco-cards-section{
+   
+    min-height: 130vh;
+    font-family: 'FuentesubtituloRegular';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.text-titulos-cards-deco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos-deco{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.text-deco{
+    font-family: 'FuentesubtituloLight';
+    font-size: 1.1rem;
+}
+
+#cards-deco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+   width: 70%;
+   gap:30px;
+   flex-wrap: wrap;
+    
+}
+
+
+.img-card-deco{
+width: 50px;
+}
+
+.cards-deco .card-img-overlay{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards-deco .card{
+    width: 20rem;
+    border-radius: 0;
+    
+}
+
+.cards-deco .card .card-img-overlay h5{
+    text-shadow: 2px 2px 1px #333333aa;
+    color: #edeae6;
+}
+
+.cards-deco .a-deco{
+    color: #edeae6;
+    text-decoration: none;
+    border: 1px solid #edeae6;
+    padding: 5px 20px;
+    background: #edeae60f;
+    box-shadow: 1px 1px 2px #3333332d;
+    text-shadow: 1px 2px 2px #3333332d;;
+}
+
+
+
+.a-deco span{
+    margin-left: 20px;
+}
+
+.iconos-deco-cards{
+    width: 32px;
+    margin-bottom: 5px;
+}
+
+.cards-deco .card-img{
+    border-radius: 0;
+}
+
+
+@media screen and (max-width: 1200px){
+    .fotos-banner-deco{
+        top: 45%;
+        left: 35%;
+    }
+    
+    .fotos-banner-deco h1{
+        font-size: 2.5rem;
+       
+    }
+    
+    .fotos-banner-deco p{
+        font-size: 1.3rem;
+        
+    }
+
+    #cards-deco{
+        /* grid-template-columns: 1fr 1fr; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .deco-cards-section{
+        padding: 25px;
+    }
+    #cards-deco .card{
+        width: 18rem;
+        
+    }
+    
+ }
+ @media screen and (max-width:760px) {
+    #banner-deco{
+        min-height: 15vh;
+    }
+    .fotos-banner-deco{
+        top: 45%;
+        left: 40%;
+    }
+    
+    .fotos-banner-deco h1{
+        font-size: 1.5rem;
+       
+    }
+    
+    .fotos-banner-deco p{
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .fotos-banner-deco img{
+        width:25px;
+    }
+
+    #cards-deco{
+        grid-template-columns: 1fr;
+    }
+
+    .deco-cards-section{
+        min-height: 1900px;
+        text-align: center;
+    }   
+
+    .text-titulos-cards-deco p{
+        width: 80%;
+    }
+
+    #cards-deco .card{
+        width: 15rem;
+    }
+
+    #cards-deco{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+ @media screen and (max-width:430px) {
+    #banner-deco{
+        min-height: 15vh;
+    }
+    .fotos-banner-deco{
+        top: 45%;
+        left: 35%;
+    }
+    
+    .fotos-banner-deco h1{
+        font-size: 1rem;
+       
+    }
+    
+    .fotos-banner-deco p{
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+    }
+
+    .fotos-banner-deco img{
+        width:20px;
+    }
+ }
+
+
+/* ----------------------------- */
+
+
+
+/* -----------section blends */
+
+.blends{
+    background: #edeceb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.blends-titulo, .rutas-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'fuentesubtituloLight';
+    margin-bottom: 20px;
+}
+.blends-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+.blends-cards .card{
+    width: 20rem;
+    border-radius: 0;
+}
+
+.blends-cards .card img{
+    border-radius: 0;
+}
+
+.blends-cards .card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #edeae6;
+    text-shadow: 1px 2px 1px #333;
+}
+
+.blends-cards .card-img-overlay div{
+    margin-bottom: 15px;
+}
+
+.blends-cards .card a{
+    color: #edeae6;
+    border: 1px solid #edeae6;
+    padding: 5px 15px;
+    background: #edeae626;
+    text-decoration: none;
+}
+.rutas-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rutas-slide img {
+    width: 1100px;
+}
+
+.rutas-slide .foto-linea{
+    width: 500px;
+}
+.rutas-slide div{
+    margin-top: 40px;
+}
+
+.rutas-slide a{
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #454545c1;
+    padding: 5px 15px;
+}
+
+
+#footer-deco{
+    background: white;
+}
+
+
+@media screen and (max-width: 950px){
+    .blends-cards{
+        flex-direction: column;
+    }
+
+    .rutas-slide img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:760px) {
+    .rutas-slide img{
+     width: 300px;   
+    }
+    .rutas-slide .foto-linea{
+        width: 200px;
+    }
+
+    .rutas-slide a{
+        font-size: 0.4rem;
+    }
+
+    .blends-titulo p, .rutas-titulo p{
+        width: 80%;
+    }
+.blends-cards .card{
+    width: 16rem;
+}
+
+
+}
+/* --------------------------------- */
+
+
+
+
+/* -----------watar--------------------- */
+
+.banner-watar{
+    position: relative;
+}
+
+.watar-quieroviajar{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    color: #edeae6 ;
+    border: 1px solid #edeae6;
+    padding: 5px 15px;
+    background: #edeae62c;
+    font-family: 'FuentesubtituloRegular';
+    text-decoration: none;
+}
+
+.watar-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto-card-watar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-watar{
+    width: 100px;
+}
+
+.texto-card-watar h6{ 
+    font-family: 'FuentesubtituloRegular';
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.texto-card-watar p{
+    font-family: 'FuentesubtituloLight';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.watar-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.watar-card .card{
+    width: 18rem;
+}
+
+.texto-overlay-watar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #edeae6;
+    text-shadow: 2px 2px 2px #33333375;
+}
+
+.texto-overlay-watar a{
+    color: #edeae6;
+    text-decoration: none;
+    border: 1px solid #edeae6;
+    padding: 5px 15px;
+    text-shadow: 2px 2px 2px #33333375;
+    background: #edeae61b;
+
+}
+
+.texto-extra-card{
+    font-family: 'FuentesubtituloLight';
+    width: 50%;
+    text-align: center;
+    margin-top: 30PX;
+}
+
+.watar-banner-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.watar-banner-dos .iconos-watar{
+    width: 50px;
+}
+.banner-dos{
+    margin-bottom: 20px;
+}
+.texto-watar-banner-dos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.texto-watar-banner-dos h1{
+    font-family: 'Fuentetitulo';
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.texto-watar-banner-dos p{
+    font-family: 'FuentesubtituloLight';
+    width: 80%;
+}
+
+.lista-bannerdos-watar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width:70%;
+   
+}
+
+.lista-bannerdos-watar div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'FuentesubtituloLight';
+}
+
+.lista-bannerdos-watar div p{
+    font-size: 0.8rem;
+    width: 100%;
+}
+.iconos-watar-dos{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* form */
+
+/* .formulario-watar{
+    background: #059bd2 ;
+    min-height: 100vh;
+}
+
+
+.formulario-watar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-form-watar{
+    display: fle;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'FuentesubtituloLight';
+
+}
+
+.titulo-form-watar h6{
+    font-size: 2rem;
+}
+
+.mb-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.formulario-watar{
+    color: #edeae6;
+    
+}
+
+.form-watar{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#filauno{
+    color: #edeae6;
+}
+#filauno select,#filauno input{
+    background-color:#059bd2;
+    color: #edeae6;
+}
+#filados input{
+    background: #059bd2;
+    color: #edeae6;
+}
+
+#filatres textarea{
+    background: #059bd2;
+    color: #edeae6;
+}
+
+textarea{
+    width: 100%;
+}
+#apellido{
+    color: #edeae6;
+} */
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    .watar-quieroviajar{
+        left: 44%;
+        font-size: 0.8rem;
+    }
+
+    .texto-card-watar p{
+        width: 80%;
+    }
+
+    .texto-watar-banner-dos h1{
+        font-size: 2rem;
+    }
+
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .watar-quieroviajar{
+        left: 43%;
+        font-size: 0.5rem;
+        
+    }
+    .texto-card-watar p{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .texto-extra-card{
+        width: 85%;
+        font-size: 0.9rem;
+    }
+
+    .lista-bannerdos-watar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-bannerdos-watar .edad-watar,.lista-bannerdos-watar .duracion-watar,.lista-bannerdos-watar .ingles-watar,.lista-bannerdos-watar .estudios-watar {
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .watar-quieroviajar{
+        left: 41%;
+        font-size: 0.3rem;
+    }
+}
+/* ------------------------------------- */
+/* --------form-------- */
+
+.section-form-watar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #059bd2;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#form-watar{
+    width: 85%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formform-watar{
+    width: 80%;
+}
+
+.texto-form-watar{
+    font-family: 'FuentesubtituloLight';
+    color: #edeae6;
+}
+
+.texto-form-watar p{
+    font-size: 1.2rem;
+}
+
+.filauno{
+ display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+ #filauno select, #filauno input, #filados input, textarea{
+    background: transparent;
+    color: #edeae6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #edeae6;
+     width: 100%; 
+    font-size: 12px;
+    font-family: 'FuentesubtituloLight';
+}
+
+::placeholder{
+    color: #edeae6;
+}
+
+.filados{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+.rayita{
+    color: #edeae6;
+    text-align: right;
+    height: 2px;
+    width: 80px;
+    float: right;
+    background-color: #edeae6;
+}
+
+textarea{
+    text-align: left;
+}
+
+.filatres{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filatres input{
+    padding: 6px 60px;
+}
+  
+
+@media screen and (max-width:950px){
+   
+.texto-form-watar{
+    width: 60%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+   
+    
+}
+@media screen and (max-width:480px) {
+   .filauno, .filados{
+    flex-direction: column;
+   }
+
+   .section-form-watar{
+    padding: 30px;
+   }
+   .texto-form-watar{
+    width: 80%;
+   }
+
+   
+}
+
+
+

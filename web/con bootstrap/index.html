@@ -15,24 +15,29 @@
 <body>
     
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header id="home">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/logo1.png" class="imagen-menu" alt="imagen de logo la portuaria">
-          </a>
+         
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center">
               <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  <img src="./img/logo1.png" class="imagen-menu" alt="imagen de logo la portuaria">
+                </a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Viajes</a>
+                <a class="nav-link" href="#viajes">Viajes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Deco & Blends</a>
@@ -43,43 +48,63 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contactanos</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-disabled="true">Login <span><i class="bi bi-lock-fill"></i></span></a>
-              </li>
+        
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="login" aria-disabled="true"><span><i class="bi bi-lock-fill"></i></span> Login </a>
+              </li> -->
             </ul>
            
           </div>
         </div>
       </nav>
+    </header>
       <!-- end of navbar -->
 
+<!-- back -->
+<div id="back">
+  <a href="#home"><img src="../img/caret-up-square.svg" alt=""></a>
+</div>
+
+      
       <!-- Carrousel de inicio -->
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/IMAGEN1.png" class="d-block w-100" alt="...">
+            <img src="./img/home/HOMECARRUSEL1.1.png" class="d-block w-100" alt="...">
+            <!-- <h2 class="home-titles">
+              Espíritu viajero
+            </h2> -->
           </div>
           <div class="carousel-item">
-            <img src="./img/imagen2.png" class="d-block w-100" alt="...">
+            <img src="./img/home/HOMECARRUSEL2.2.png" class="d-block w-100" alt="...">
+            <!-- <h2 class="home-titles">
+              Apasionados y <br>
+              aventureros
+            </h2> -->
           </div>
           <div class="carousel-item">
-            <img src="./img/imagen3.png" class="d-block w-100" alt="...">
+            <img src="./img/home/HOMECARRUSEL3.png" class="d-block w-100" alt="...">
+            <!-- <h2 class="home-titles">
+              La experiencia de viajar <br>
+              a través de los objetos
+            </h2> -->
+          </div>
+          <div class="carousel-item">
+            <img src="./img/home/HOMECARRUSEL4.png" class="d-block w-100" alt="...">
+            <!-- <h2 class="home-titles">
+              Viajar a través de <br>
+              aromas y sabores
+            </h2> -->
+          </div>
+          <div class="carousel-item">
+            <img src="./img/home/HOMECARRUSEL5.png" class="d-block w-100" alt="...">
+            <!-- <h2 class="home-titles">
+              Espiritu viajero <br>
+              presente
+            </h2> -->
           </div>
         </div>
-        <div class="carousel-overlay">
-            <button class="btn btn-center" id="btnquieroviajar">Quiero Viajar <span> &#62</span></button>
-        </div>
+        
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -88,23 +113,262 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+
+        <a href="#" class="btn" id="btnquieroviajar">Quiero Viajar &#62</a>
+
+
+        
       </div>
       <!-- end de carrousel -->
 
 
-         <!-- nosotros -->
-    <section class="nosotros">
-      <p class="iconos"><i class="bi bi-heart"></i></p>
-      <p class="subtitulos">Nosotros</p>
-      <h2>Somos la escencia del espiritu viajer.</h2>
-      <div class="textoconfoto">
-          <div class="textoyboton">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero cum voluptatibus similique aliquam non accusantium labore, maiores porro consequuntur error excepturi architecto. Enim placeat, veniam soluta ipsum commodi ducimus aperiam.</p>
-              <a href="">ver más</a>
-          </div>
-          <img src="./img/logo1.png" alt="">
+
+    <!-- SECTION nosotros -->
+    <section class="nosotros" id="nosotros">
+
+        
+      <div class="text-us">
+          <img src="./img/home/icon corazon.png" class="img-fuid icono" alt="">
+          <h6 class="subclass">
+              Nosotros
+          </h6>
+
+          <h3 class="subtext">
+              Somos la esencia del espiritu viajero
+          </h3>
       </div>
+      <br>
+      <br>
+
+      <div class="text-us-pic">
+          <div class="textus-button">
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing 
+                  elit. Aperiam aliquid alias adipisci dicta rerum,
+                   soluta, commodi quibusdam neque, earum nam illo 
+                   esse deleniti quidem accusantium aut! A ipsa 
+                   commodi deserunt?
+              </p>
+             
+              <a href="#" class="a-more">Ver más > </a>
+          </div>
+          <img src="./img/nosotros/NOSOTROSFOTO.jpeg" class="img-fluid" alt="imagen">
+      </div>
+
+
   </section>
+  <!-- ---------------- -->
+
+
+
+
+  <!-- SECTION  viajes -->
+
+  <section class="viajes" id="viajes">
+
+      <div class="pic-viajes">
+          <img src="./img/viajes/VIAJES1.jpeg" class="img-fluid" alt="">
+          <img src="./img/viajes/VIAJES2.jpeg" class="img-fluid" alt="">
+          <img src="./img/viajes/VIAJES3.jpeg" class="img-fluid" alt="">
+          <div class="text-pic text-center">
+              <h1 >Viajes</h1>
+              <h6 >Donde te lleve tu 
+                <br>espiritu viajero</h6>
+          </div>
+      </div>
+      <div class="card-viajes">
+          <div class="text-viajes">
+              <img src="./img/home/icono valija.png" class="img-fluid icono" alt="">              
+               <h3 class="subtext">
+                  A dónde querés viajar?
+              </h3>
+              <p class="subtext-viajes">
+                  Te llevamos a los lugares más increibles del mundo. Que tu espiritu 
+                  viajero elija el destino.
+              </p>
+          </div>
+
+          <div class="cards">
+
+              <div class="card" >
+                  <img src="./img/viajes/VIAJES LP-Grecia.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Soñá Europa</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+
+              <div class="card" >
+                  <img src="./img/viajes/VIAJES LP-Turquia.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Explorá Destinos Exóticos</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+
+              <div class="card" >
+                  <img src="./img/viajes/VIAJES LP-Caribe.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Sentí Caribe y Brasil</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+
+              <div class="card" >
+                  <img src="./img/viajes/VIAJES LP-Crucero.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Disfrutá Cruceros</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+
+              <div class="card" >
+                  <img src="./img/viajes/VIAJES LP-Nueva York.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Viví EEUU</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+     
+              <div class="card"> 
+                  <img src="./img/viajes/VIAJES LP-Cataratas.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Amá Argentina</h5>
+                    </div>
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Card title</h5> -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="a-more">Ver más ></a>
+                  </div>
+                  <img src="./img/viajes/logito.png" class="card-logo" alt="">
+
+              </div>
+
+
+          </div>
+      </div>
+
+
+
+  </section>
+
+  <!-- fin SECTION viajes--------------- -->
+
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+      <div class="footer-navegacion category">
+          <h6 class="footer-title">
+              NAVEGACION
+          </h6>
+          <ul class="naveg">
+              <a href=""><li>Inicio</li></a>
+              <a href=""><li>Nosotros</li></a>
+              <a href=""><li>Viajes</li></a>
+              <a href=""><li>Deco & Blends</li></a>
+              <a href=""><li>Regalos</li></a>
+              <a href=""><li>Buquebus</li></a>
+              <a href=""><li>Watar</li></a>
+              <a href=""><li>Contactanos</li></a>
+          </ul>
+      </div>
+
+      <div class="footer-medpagos category">
+          <h6 class="footer-title">
+              MEDIOS DE PAGO
+          </h6>
+          <div class="tarjetas">
+              <img src="./img/footer/visa@2x.png" alt="">
+              <img src="./img/footer/mastercard@2x.png" alt="">
+              <img src="./img/footer/amex@2x.png" alt="">
+              <img src="./img/footer/diners@2x.png" alt="">
+              <img src="./img/footer/banelco@2x.png" alt="">
+              <img src="./img/footer/cabal@2x.png" alt="">
+              <img src="./img/footer/tarjeta-naranja@2x.png" alt="">
+              <img src="./img/footer/argencard@2x.png" alt="">
+              <img src="./img/footer/mercadopago@2x.png" alt="">
+              <img src="./img/footer/cencosud@2x.png" alt="">   
+              <img src="./img/footer/tarjeta-shopping@2x.png" alt="">
+              <img src="./img/footer/pagofacil@2x.png" alt="">
+              <img src="./img/footer/rapipago@2x.png" alt="">
+              <!-- <img src="./branch@2x.png" alt="">
+              <img src="./table@2x.png" alt=""> -->
+
+
+          </div>
+      </div>
+
+      <div class="footer-formaenvio category">
+          <h6 class="footer-title">
+              FORMA DE ENVÍO
+          </h6>
+          <div class="fenvio">    
+          <img src="./img/footer/oca@2x.png" alt="">
+
+          </div>
+      </div>
+
+      <div class="footer-contacto category">
+          <h6 class="footer-title">
+              CONTACTO
+          </h6>
+          <ul class="cont">
+              <a href=""><li><i class="bi bi-whatsapp"></i> 542916481743</li></a>
+              <a href=""><li><i class="bi bi-telephone"></i> 29164B1743</li></a>
+              <a href=""><li<i class="bi bi-envelope-at"></i> ventas@laportuariatur.ar</li></a>
+              <a href=""><li><i class="bi bi-geo-alt"></i> Urquiza344 | Bahía Blanca</li></a>
+             
+          </ul>
+      </div>
+      <div class="footer-redes category">
+          <h6 class="footer-title">
+              REDES SOCIALES
+          </h6>
+          <ul class="redes">
+              <a href=""><li><i class="bi bi-instagram"></i> @laportuariaviajes</li></a>
+              <a href=""><li><i class="bi bi-facebook"></i> laportuariaviajes</li></a>
+              
+          </ul>
+      </div>
+  </footer>
+
 
 
 
